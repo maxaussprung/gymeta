@@ -32,6 +32,9 @@ export const App = () => {
           <VStack spacing={8}>
             <Logo h="40vmin" pointerEvents="none" />
             <Text>
+              commit test
+            </Text>
+            <Text>
               <p>{!data ? "Loading..." : data}</p>
             </Text>
             <Text>

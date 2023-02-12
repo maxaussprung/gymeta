@@ -8,6 +8,7 @@ import {
   Code,
   Grid,
   theme,
+  CircularProgress,
 } from "@chakra-ui/react"
 import { ColorModeSwitcher } from "./ColorModeSwitcher"
 import { Logo } from "./Logo"
@@ -31,9 +32,7 @@ export const App = () => {
           <ColorModeSwitcher justifySelf="flex-end" />
           <VStack spacing={8}>
             <Logo h="40vmin" pointerEvents="none" />
-            <Text>
-              commit test
-            </Text>
+            <CircularProgress isIndeterminate color='green.300' />
             <Text>
               <p>{!data ? "Loading..." : data}</p>
             </Text>
